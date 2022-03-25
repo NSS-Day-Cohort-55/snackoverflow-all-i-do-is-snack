@@ -10,6 +10,13 @@ export const FoodCard = (foodObj) => {
                 <h5 class="card-title">${foodObj.name}</h5>
                 <p class="card-text">${foodObj.description}</p>
                 <p>Price: $${foodObj.price}</p>
+
+                <p>${
+                    foodObj.isVegetarian
+                      ? `<img src ="./assets/images/icon-veg.png" alt="IsVegetarian">`
+                      : ""
+                  }</p>
+
                 <!-- <button type="button" class="btn btn-primary">Example Bootstrap Button</button> -->
             </div>
         </div>
