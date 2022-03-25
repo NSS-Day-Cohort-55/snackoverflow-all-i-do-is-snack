@@ -11,13 +11,12 @@ export const FoodCard = (foodObj) => {
                 <p class="card-text">${foodObj.description}</p>
                 <p>Price: $${foodObj.price}</p>
 
-                <p>${
-                    foodObj.isVegetarian
-                      ? `<img src ="./assets/images/icon-veg.png" alt="IsVegetarian">`
-                      : ""
-                  }</p>
+                <p>${foodObj.isVegetarian
+            ? `<img src ="./assets/images/icon-veg.png" alt="IsVegetarian">`
+            : ""
+        }</p>
 
-                <!-- <button type="button" class="btn btn-primary">Example Bootstrap Button</button> -->
+                <button type="button" class="btn btn-primary">Order</button>
             </div>
         </div>
     </div>
